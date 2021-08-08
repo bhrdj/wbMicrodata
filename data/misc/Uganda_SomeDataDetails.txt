@@ -1,0 +1,143 @@
+# Some Metadata for Uganda 2019-2020
+National Panel Survey 2019-2020
+wbMicrodata
+Analyzing World Bank Microdata.
+https://microdata.worldbank.org/index.php/catalog/3902
+
+--------------------------------------------------------------------
+### Data file: GSEC2.dta
+### Data file: GSEC14.dta
+### Data file: GSEC15A.dta
+### Data file: GSEC15C.dta
+
+--------------------------------------------------------------------
+## Household Assets
+### Data file: GSEC14.dta
+Level of observation: Asset Type
+
+Variables
+hhid
+Unique household identifier in 2019/20
+h14q02
+2. Type of Asset
+h14q03
+3. Does any member of your household own [ASSET] at present?
+h14q03a
+3a. Who owns [ASSET]?-1st PID
+h14q03b
+3b. Who owns [ASSET]?-2nd PID
+h14q04
+4. How many [ASSET] do(es) your household own at present?
+h14q05
+5. What is the Total estimated value of the [ASSET] owned at present?
+h14q06
+6. Why do you have less [ASSET] than last year?
+h14q07
+7. Why do you have more [ASSET] than last year?
+h14q08
+8. What should have been the number last time?
+Total: 10
+
+
+## Household Consumption Expenditures
+### Data file: GSEC15C.dta
+Non-Durable Goods and Frequently Purchased Services (Last 30 days)
+Level of observation:Consumption Item
+
+Variables
+hhid
+Unique household identifier in 2019/20
+CEC02
+Item Code
+CEC01
+Item Desctiption
+coicop_3
+Classification of consumption by purpose:Class
+coicop_2
+Classification of consumption by purpose:group
+CEC02_1
+CEC02_1. Did the HH consume [ITEM]?
+CEC03
+CEC03. Unit of Quantity
+CEC04
+CEC04. Qty purchased
+CEC05
+CEC05. Value purchased
+CEC06
+CEC06. home produced Qty for item
+CEC07
+CEC07. home produced Valuefor item
+CEC08
+CEC08. Qty received inkind for item
+CEC09
+CEC09. Qty received inkind Value for item
+CEC10
+CEC10. Unit Price for item
+CEC11
+CEC11. Was %rostertitle% consumed substandard?
+CEC12
+CEC12. Did the [ITEM] perform well,was it enjoyable/fancy?(1-5,Most-Least)
+CEC13
+CEC13. Did the [ITEM] cause any harm to you or your hh members? (1-5,Most-Least)
+CEC14
+CEC14. Was [ITEM] genuine or deceptive in nature,packaging/labeling?(1-5,Most-Le
+
+
+
+## Household Roster
+### Data file: GSEC2.dta
+
+Level of observation:Individual
+Cases: 	16056
+Variables: 	13
+
+Variables
+hhid
+Unique household identifier in 2019/20
+PID
+PERSON IDENTIFIER in 2019/20
+pid_unps_wave7
+PERSON IDENTIFIER in 2018/19
+h2q3
+3. Sex
+h2q4
+4. What is the relationship of %rostertitle% to the head of the household?
+h2q7
+7. What is the residential status of [NAME]?
+h2q5
+5. During the past 12 months, how many months did [NAME] live here?
+h2q6
+6. If [NAME] has not stayed for 12 months, what is the main reason for absence?
+h2q8
+8. How old is [NAME] in completed years? IF LESS THAN ONE YEAR, WRITE 0
+h2q9a
+9a. What is the date of birth of [NAME]? DAY
+h2q9b
+9b. What is the date of birth of [NAME]? MONTH
+h2q9c
+9c. What is the date of birth of [NAME]? YEAR
+h2q10
+10. What is the present marital status of [NAME]?
+
+
+
+## Number of people present for meals
+### Data file: GSEC15A.dta
+
+Level of observation:Household
+Cases: 	6156
+Variables: 	6
+
+Variables
+hhid
+Unique household identifier in 2019/20
+CEA01
+Household member/visitor
+CEA01A
+Number of people present for selected category in the last7 days (Male adults)
+CEA01B
+Number of people present for selected category in the last7 days (Female adults)
+CEA01C
+Number of people present for selected category in the last7 days(Male children)
+CEA01D
+Number of people present for selected category in the last7 day(Female children)
