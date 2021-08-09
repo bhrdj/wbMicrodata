@@ -1,3 +1,0 @@
-ValueCategory
-1 	Yes
-2 	No

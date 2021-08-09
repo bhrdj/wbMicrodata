@@ -4,10 +4,9 @@ library(tidyverse)
 library(readr)
 library(nVennR)
 library(magrittr)
+
 options(tibble.print_max = 1000)
-
 normalized_pop <- 1000
-
 
 df_paths <- list(
   UGA_2005 = "./data/UGA_2005_2009_UNPS_v01_M_Stata8/2009_GSEC14.dta",
@@ -18,10 +17,11 @@ df_paths <- list(
   UGA_2018 = "./data/UGA_2018_UNPS_v01_M_STATA12/hh/HH/GSEC14.dta",
   UGA_2019 = "./data/UGA_2019_UNPS_v01_M_STATA14/HH/gsec14.dta"
 )
-df_list <- list()
+
 
 # loop through the years
   # each year, make a tidy data frame of household observations
+df_list <- list()
 for (key in names(df_paths)) {
   df_list[[{{key}}]] <- df_paths[[key]] %>%
     read_dta() %T>%
@@ -33,7 +33,9 @@ for (key in names(df_paths)) {
     select(-c(h14q3)) %>%
     pivot_wider(id_cols = hhid, names_from = h14q2, values_from = have_one) %>%
     select(c("hhid", `10`, `11`, `12`)) %>%
-    rename(bike = `10`, motorbike = `11`, `car` = `12`)
+    rename(bike = `10`, motorbike = `11`, `car` = `12`) %>%
+    mutate(country = (str_split(key, "_"))[[1]][[1]]) %>%
+    mutate(year = (str_split(key, "_"))[[1]][[2]])
 }
 
 # loop through the ears

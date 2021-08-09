@@ -1,5 +1,0 @@
-ValueCategory
-1Yes, individually
-4Yes, jointly with hh members
-5Yes, jointly with non hh member
-2No (>> NEXT ASSET)
