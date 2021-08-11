@@ -1,0 +1,295 @@
+---
+title: "vehicleVenn"
+subtitle: "Household Ownership of Multiple Transport Vehicles in Uganda and Albania: Visualized With Quasi-proportional Venn Diagrams (nVennR)"
+author: "Steven Bhardwaj"
+date: "2021-08-08"
+output: 
+  html_document:
+    theme:
+      bootswatch: darkly
+    code_folding: hide
+---
+<style type="text/css" media="screen, print">
+
+h1.title {
+  padding-top: 2em;
+  text-align: center;
+}
+h3.subtitle {
+  text-align: center;
+}
+h4.author {
+  font-size: 1em;
+  text-align: center;
+}
+h4.date {
+  font-size: 1em;
+  text-align: center;
+}
+.center_plots {
+  font-size: 1em;
+  text-align: center;
+  margin: auto;
+  width: 70%;
+}
+.width_auto {
+  width: auto;
+}
+#homeLink {
+  font-size: 1.5em;
+  color: #CCCCCC !important;
+  opacity: 1;
+  width: 5em;
+	height: 1.2em;
+  position: absolute;
+  top: 3%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+}
+hr{
+  height: 1px;
+  background-color: #FFF;
+  border: none;
+}
+.column {
+  float: left;
+  width: 50%;
+}
+/* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+@media screen and (max-width: 1000px) {
+  .column {
+    width: 100%;
+  }
+}
+</style>
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_chunk$set(eval = TRUE)
+```
+```{r include=FALSE}
+library(tidyverse)
+library(readr)
+library(nVennR)
+library(magrittr)
+library(haven)
+library(slickR)
+library(htmlwidgets)
+library(htmltools)
+```
+
+<!-- 
+INKSCAPE COMMAND LINE CODE TO DO COLOR INVERSION OF THE SVG FILE
+inkscape --with-gui ALB_2002.svg UGA_2011.svg UGA_2019.svg ALB_2005.svg UGA_2013.svg ALB_2012.svg UGA_2005.svg UGA_2015.svg UGA_2010.svg UGA_2018.svg --verb="EditSelectAll;org.inkscape.effect.filter.Invert.noprefs;FileSave;FileClose;FileQuit"
+-->
+
+<!-- LOGO / LINK TO HOME SCREEN -->
+<div id="homeLink"><a href="../index.html"><p align="center">
+bhrdwj.net
+<br>
+潘
+</p></a></div>
+
+<!-- MAIN BODY -->
+### Abstract
+The World Bank took very detailed surveys of representative samples of households in a bunch of countries. Here, I asked the data which families had bicycles, motorbikes, or motor vehicles, and then made Venn Diagrams out of the results.
+
+<hr> ### Plots
+- Sample is normalized to 1000 households in each graph.
+    - So in each of these plots, more than half (500+/1000) of the sampled households had no vehicle in the household.
+- Swipe the charts to compare different countries and years. Available are:
+    - Albania: 2002, 2005, 2012
+    - Uganda: 2010, 2011, 2013, 2015, 2018, 2019
+
+<div class="row"><div class="column center_plots">
+``` {r}
+#eval=FALSE, include=FALSE}
+alb_uris <- c("http://bhrdwj.net/r/svg/ALB_2002.svg", 
+             "http://bhrdwj.net/r/svg/ALB_2005.svg", 
+             "http://bhrdwj.net/r/svg/ALB_2012.svg",
+             "http://bhrdwj.net/r/svg/UGA_2010.svg", 
+             "http://bhrdwj.net/r/svg/UGA_2011.svg", 
+             "http://bhrdwj.net/r/svg/UGA_2013.svg", 
+             "http://bhrdwj.net/r/svg/UGA_2015.svg", 
+             "http://bhrdwj.net/r/svg/UGA_2018.svg", 
+             "http://bhrdwj.net/r/svg/UGA_2019.svg")
+slickR(obj = alb_uris, width = "90%", height = 300)
+```
+</div><div class="column center_plots">
+``` {r}
+#eval=FALSE, include=FALSE}
+uga_uris <- c("http://bhrdwj.net/r/svg/ALB_2002.svg", 
+             "http://bhrdwj.net/r/svg/ALB_2005.svg", 
+             "http://bhrdwj.net/r/svg/ALB_2012.svg",
+             "http://bhrdwj.net/r/svg/UGA_2010.svg", 
+             "http://bhrdwj.net/r/svg/UGA_2011.svg", 
+             "http://bhrdwj.net/r/svg/UGA_2013.svg", 
+             "http://bhrdwj.net/r/svg/UGA_2015.svg", 
+             "http://bhrdwj.net/r/svg/UGA_2018.svg", 
+             "http://bhrdwj.net/r/svg/UGA_2019.svg")
+slickR(obj = uga_uris, width = "90%", height = 300)
+```
+</div></div> 
+
+
+<div class="center_plots">
+<br>
+
+
+<br><br>
+
+
+</div>
+
+<hr> 
+
+### Discussion
+
+I was particularly surprised at how many Albanian households didn't report owning any kind of vehicle in the survey. 🤔 
+
+I have a bunch more plots, but am working on getting javascript working to swipe through them. Summary statistics and more also forthcoming.
+
+<hr>
+## Code
+### Import R Libraries
+```{r eval=FALSE}
+library(tidyverse)
+library(readr)
+library(nVennR)
+library(magrittr)
+library(haven)
+```
+<hr> ### Raw-data Pathnames
+```{r eval=FALSE}
+# data source: 
+# https://microdata.worldbank.org/index.php/catalog/lsms
+
+# LOCAL PATHS
+ALB_paths <- list(
+  ALB_2002 = "./data/ALB_2002_LSMS_v01_M_STATA8/ndurables_cl.dta",
+  ALB_2005 = "./data/ALB_2005_LSMS_v01_M_STATA8/dwellingC1_cl.dta",
+  ALB_2012 = "./data/ALB_2012_from-gov-website_LSMS 2012_eng/Data_LSMS 2012/Modul_13C1_Household_Durables.sav"
+)
+
+UGA_paths <- list(
+  UGA_2005 = "./data/UGA_2005_2009_UNPS_v01_M_Stata8/2009_GSEC14.dta",
+  UGA_2010 = "./data/UGA_2010_UNPS_v01_M_Stata8/GSEC14.dta",
+  UGA_2011 = "./data/UGA_2011_UNPS_v01_M_Stata/GSEC14.dta",
+  UGA_2013 = "./data/UGA_2013_UNPS_v01_M_STATA8/GSEC14A.dta",
+  UGA_2015 = "./data/UGA_2015_UNPS_v01_M_STATA8/gsec14.dta",
+  UGA_2018 = "./data/UGA_2018_UNPS_v01_M_STATA12/hh/HH/GSEC14.dta",
+  UGA_2019 = "./data/UGA_2019_UNPS_v01_M_STATA14/HH/gsec14.dta"
+)
+```
+<hr> ### List of field-names for data cleaning
+```{r eval=FALSE}
+ALB_vars <- list(
+  ALB_2002 = list(item_names = "m3c_q01a", item_codes = "m3c_q01b" , num_owned = "m3c_q01c" ),
+  ALB_2005 = list(item_names = "m13c1_q1a", item_codes = "m13c1_q1b" , num_owned = "m13c1_q1c"),
+  ALB_2012 = list(item_names = "m13c1_q1a", item_codes = "m13c1_q1b", num_owned = "m13c1_q1c")
+)
+```
+<hr> ### Data-cleaning for Albania data
+```{r eval=FALSE}
+# ALB
+# Loop through the years
+  # Each year, make a tidy data frame of household observations
+df_list <- list()
+for (key in names(ALB_paths)) {
+  df_list[[{{key}}]] <- ALB_paths[[key]] %>%
+    
+    # MAKE COLUMN NAMES FROM DIFFERENT YEARS CONSISTENT
+    {if (grepl(".sav", ALB_paths[[key]], fixed = TRUE)) read_sav(.) else
+      if (grepl(".dta", ALB_paths[[key]], fixed = TRUE)) read_dta(.) else 
+      print("bad data filepath")} %>%
+    {if ("psu" %in% colnames(.)) mutate_at(., c("psu", "hh"), as.character) %>%
+      mutate(hhid = paste(psu, "_", hh, sep=""), hh=NULL, psu=NULL) else .} %>%
+    rename(names_ = ALB_vars[[{{key}}]]$item_names,
+           codes_ = ALB_vars[[{{key}}]]$item_codes,
+           num_   = ALB_vars[[{{key}}]]$num_owned) %>%
+    
+    # CLEAN AND SIMPLIFY COLUMNS
+    select(hhid, names_, num_, codes_) %>%
+    mutate(num_ = as.integer(num_))  %>%
+    mutate(have_one = (num_ >= 1), num_ = NULL) %>%
+    filter(names_ != "") %>%
+    
+    # TIDY BY WIDENING: ONE ROW FOR EACH HOUSEHOLD, ONE COLUMN FOR EACH ASSET TYPE
+    pivot_wider(id_cols = c("hhid"), names_from=codes_, values_from = have_one) %>%
+    
+    # MAKE ASSET CODES HUMAN-READABLE.  COMBINE TRUCK AND CAR TO MOTOR VEHICLE.
+    rename(bike = `120`, motorbike = `121`, car = `122`, truck = `123`) %>%
+    mutate(motor_vehicle = car | truck, car=NULL, truck=NULL) %>%
+    select(c("hhid", "bike", "motorbike", "motor_vehicle")) %>%
+    mutate(country = (str_split(key, "_"))[[1]][[1]]) %>%
+    mutate(year = (str_split(key, "_"))[[1]][[2]])
+}
+```
+<hr> ### Data-cleaning for Uganda data
+```{r eval=FALSE}
+# UGA
+for (key in names(UGA_paths)) {
+  df_list[[{{key}}]] <- UGA_paths[[key]] %>%
+    read_dta() %T>%
+    {colnames(.) <- tolower(colnames(.))} %T>%
+    {colnames(.) <- sub("q0", "q", colnames(.))} %>%
+    select(c("hhid", "h14q2", "h14q3")) %>%
+    mutate(across(c("h14q2", "h14q3"), as.integer)) %>%
+    mutate(have_one = h14q3 == 1 | h14q3 == 4 | h14q3 == 5) %>%
+    select(-c(h14q3)) %>%
+    pivot_wider(id_cols = hhid, names_from = h14q2, values_from = have_one) %>%
+    select(c("hhid", `10`, `11`, `12`)) %>%
+    rename(bike = `10`, motorbike = `11`, `motor_vehicle` = `12`) %>%
+    mutate(country = (str_split(key, "_"))[[1]][[1]]) %>%
+    mutate(year = (str_split(key, "_"))[[1]][[2]])
+}
+```
+<hr> ### Plot
+```{r warning=FALSE, message=FALSE, results=FALSE, eval=FALSE}
+# loop through the years
+  # each year, make a plot with normalized scale
+for (key in names(df_list)) {
+  # THIS FIRST RUN OF plotVenn ONLY RETRIEVES THE $def OUTPUT, FOR RESCALING
+  myV <- plotVenn(list(
+    bike          = subset(df_list[[key]], bike)$hhid, 
+    motorbike     = subset(df_list[[key]], motorbike)$hhid,
+    motor_vehicle = subset(df_list[[key]], motor_vehicle)$hhid #, 
+                             # COMMENT-OUT PREVIOUS COMMA TO REMOVE NO_TRANSPORT
+#    no_transport  = subset(df_list[[key]], !motor_vehicle & !motorbike & !bike)$hhid 
+                              # COMMENT-OUT PREVIOUS LINE TO REMOVE NO_TRANSPORT
+  ), nCycles = 3000)$def
+  
+  # RESCALING
+  nSets <- as.numeric(myV[2])
+  a <- 3 + nSets
+  b <- length(myV)
+  n_hh <- length(df_list[[key]]$hhid)
+  sNames <- paste(myV[3:(a-1)], rep(key, times=nSets))
+  sSizes <- as.numeric(myV[a:b])
+  sSizesNorm <- round(sSizes * 1000/n_hh)
+  
+  # PLOT
+  myV3 <- createVennObj(nSets=nSets, sNames=sNames, sSizes=sSizesNorm)
+  myV3 <- plotVenn(nVennObj = myV3, nCycles = 5000,
+                   fontScale = 1, #systemShow = TRUE,
+                   setColors=c("#00F", "#0F0", "#F00"), #, "#000"), 
+                               # COMMENT-OUT FOURTH COLOR TO REMOVE NO_TRANSPORT
+                   outFile=paste("./svg/", {{key}}, ".svg", sep=""))
+}
+```
+
+```{r include=FALSE}
+# It was not long before the otherwise unremarkable Lazarat became a byword for quality in the coffee shops of Amsterdam. At peak production, the town was estimated to be turning out 900 tons of marijuana a year, with a street value of $6.1 billion. In 1999, Albania’s GDP was equivalent to just $3.4 billion.
+
+# NEXT STEPS
+# use splide to put in the charts
+# invert the svg's directly in the css https://stackoverflow.com/questions/39761120/invert-svg-image-using-css
+# include a limited gapminder clone via plotly with just Albania and Uganda
+# embedded scenes from Dollar Street: 25% median 75% quintile-income households side-by-side
+# https://www.kaggle.com/jhossain/explore-the-gapminder-dataset-with-plotly-express
+```

@@ -1,6 +1,39 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="700" height="500">
-<defs>
-<style type="text/css"><![CDATA[
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="700"
+   height="500"
+   version="1.1"
+   id="svg1320"
+   sodipodi:docname="ALB_2005.svg"
+   inkscape:version="1.1 (1:1.1+202106031931+af4d65493e)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1322"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     showgrid="false"
+     inkscape:zoom="1.328"
+     inkscape:cx="349.7741"
+     inkscape:cy="250"
+     inkscape:window-width="1528"
+     inkscape:window-height="836"
+     inkscape:window-x="72"
+     inkscape:window-y="27"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg1320" />
+  <defs
+     id="defs1243">
+    <style
+       type="text/css"
+       id="style1232"><![CDATA[
   .borderLine {
 	   stroke: none;
 	   fill-opacity:  0.4 ;
@@ -60,56 +93,638 @@
     fill: none;
     stroke:  #F00 ;
   }
-]]>
-</style>
-<symbol id="bl0">
-<path d="M 273.81 257.74 L 271.16 263.88 L 268.07 269.71 L 264.51 275.09 L 260.47 279.93 L 255.98 284.15 L 251.07 287.69 L 245.83 290.52 L 240.37 292.62 L 234.78 293.97 L 229.13 294.60 L 223.48 294.54 L 217.85 293.84 L 212.25 292.59 L 206.69 290.89 L 201.16 288.84 L 195.66 286.56 L 190.18 284.15 L 184.72 281.71 L 179.29 279.27 L 173.87 276.88 L 168.45 274.51 L 163.02 272.19 L 157.57 269.88 L 152.11 267.58 L 146.65 265.29 L 141.22 262.99 L 135.84 260.70 L 130.50 258.40 L 125.21 256.08 L 119.95 253.73 L 114.71 251.35 L 109.49 248.95 L 104.27 246.53 L 99.05 244.09 L 93.85 241.63 L 88.67 239.14 L 83.50 236.62 L 78.34 234.04 L 73.20 231.37 L 68.10 228.56 L 63.09 225.55 L 58.21 222.32 L 53.48 218.86 L 48.94 215.17 L 44.61 211.26 L 40.50 207.14 L 36.61 202.82 L 32.97 198.30 L 29.56 193.59 L 26.40 188.69 L 23.49 183.63 L 20.85 178.42 L 18.47 173.06 L 16.37 167.57 L 14.55 161.96 L 13.02 156.26 L 11.80 150.51 L 10.89 144.70 L 10.29 138.88 L 10.00 133.05 L 10.01 127.23 L 10.32 121.44 L 10.93 115.69 L 11.81 110.00 L 12.98 104.38 L 14.43 98.84 L 16.17 93.37 L 18.21 87.96 L 20.56 82.61 L 23.21 77.35 L 26.15 72.19 L 29.36 67.18 L 32.84 62.35 L 36.56 57.71 L 40.49 53.30 L 44.63 49.12 L 48.98 45.17 L 53.52 41.47 L 58.25 38.00 L 63.16 34.78 L 68.24 31.82 L 73.48 29.12 L 78.85 26.71 L 84.35 24.57 L 89.95 22.73 L 95.63 21.18 L 101.37 19.94 L 107.16 19.01 L 112.97 18.38 L 118.80 18.06 L 124.61 18.04 L 130.41 18.32 L 136.16 18.89 L 141.87 19.75 L 147.52 20.91 L 153.08 22.36 L 158.56 24.10 L 163.94 26.12 L 169.22 28.42 L 174.39 31.00 L 179.46 33.87 L 184.42 37.03 L 189.24 40.48 L 193.93 44.18 L 198.44 48.14 L 202.77 52.31 L 206.91 56.65 L 210.85 61.12 L 214.64 65.65 L 218.32 70.18 L 221.95 74.67 L 225.56 79.11 L 229.16 83.51 L 232.77 87.89 L 236.40 92.26 L 240.08 96.64 L 243.81 101.04 L 247.59 105.44 L 251.39 109.83 L 255.22 114.20 L 259.04 118.57 L 262.84 122.98 L 266.61 127.45 L 270.33 131.98 L 273.98 136.58 L 277.49 141.33 L 280.76 146.35 L 283.64 151.82 L 285.98 157.83 L 287.73 164.34 L 288.86 171.24 L 289.37 178.39 L 289.32 185.70 L 288.85 193.02 L 288.06 200.19 L 287.06 207.08 L 285.90 213.67 L 284.60 220.02 L 283.18 226.23 L 281.63 232.44 L 279.94 238.72 L 278.12 245.06 L 276.10 251.43 Z" />
-</symbol>
-<symbol id="bl1">
-<path d="M 328.36 229.66 L 325.53 231.72 L 322.72 233.64 L 319.90 235.34 L 317.03 236.74 L 314.10 237.79 L 311.09 238.45 L 308.00 238.68 L 304.86 238.49 L 301.69 237.89 L 298.51 236.92 L 295.27 235.64 L 291.95 234.16 L 288.55 232.55 L 285.15 230.85 L 281.81 229.10 L 278.51 227.30 L 275.23 225.40 L 271.97 223.36 L 268.82 221.10 L 265.88 218.61 L 263.15 215.97 L 260.57 213.28 L 258.10 210.64 L 255.67 208.11 L 253.25 205.67 L 250.82 203.33 L 248.36 201.04 L 245.88 198.74 L 243.39 196.38 L 240.91 193.86 L 238.50 191.13 L 236.24 188.14 L 234.21 184.93 L 232.46 181.52 L 231.04 177.95 L 230.04 174.25 L 229.49 170.46 L 229.41 166.75 L 229.73 163.22 L 230.38 159.92 L 231.27 156.81 L 232.39 153.86 L 233.76 151.09 L 235.42 148.50 L 237.40 146.12 L 239.69 143.97 L 242.24 142.01 L 244.93 140.17 L 247.68 138.40 L 250.45 136.67 L 253.21 134.95 L 255.97 133.22 L 258.72 131.49 L 261.45 129.73 L 264.17 127.95 L 266.89 126.16 L 269.62 124.37 L 272.37 122.61 L 275.13 120.86 L 277.91 119.09 L 280.70 117.30 L 283.51 115.49 L 286.32 113.67 L 289.13 111.87 L 291.94 110.09 L 294.73 108.35 L 297.51 106.64 L 300.25 104.94 L 302.94 103.23 L 305.60 101.49 L 308.26 99.75 L 310.98 98.05 L 313.79 96.43 L 316.71 94.94 L 319.71 93.60 L 322.80 92.44 L 325.95 91.47 L 329.13 90.67 L 332.34 90.06 L 335.55 89.63 L 338.76 89.38 L 341.96 89.31 L 345.15 89.42 L 348.31 89.69 L 351.43 90.15 L 354.52 90.77 L 357.58 91.56 L 360.60 92.54 L 363.58 93.70 L 366.50 95.03 L 369.37 96.55 L 372.16 98.25 L 374.88 100.10 L 377.51 102.13 L 380.05 104.32 L 382.48 106.68 L 384.77 109.21 L 386.92 111.89 L 388.90 114.68 L 390.69 117.54 L 392.29 120.47 L 393.70 123.42 L 394.91 126.38 L 395.93 129.35 L 396.75 132.34 L 397.38 135.35 L 397.84 138.39 L 398.13 141.47 L 398.27 144.60 L 398.23 147.78 L 398.03 150.99 L 397.63 154.22 L 397.05 157.44 L 396.28 160.62 L 395.31 163.78 L 394.12 166.95 L 392.66 170.18 L 390.93 173.46 L 388.99 176.66 L 386.89 179.68 L 384.69 182.46 L 382.39 185.03 L 380.02 187.44 L 377.59 189.70 L 375.13 191.85 L 372.68 193.91 L 370.23 195.91 L 367.79 197.92 L 365.36 199.97 L 362.92 202.07 L 360.48 204.20 L 358.03 206.35 L 355.57 208.49 L 353.10 210.60 L 350.60 212.69 L 348.05 214.76 L 345.41 216.84 L 342.68 218.95 L 339.86 221.09 L 337.00 223.24 L 334.10 225.40 L 331.21 227.55 Z" />
-</symbol>
-<symbol id="bl2">
-<path d="M 489.84 361.44 L 489.39 367.42 L 488.67 373.37 L 487.67 379.25 L 486.41 385.08 L 484.88 390.83 L 483.08 396.49 L 481.01 402.07 L 478.66 407.57 L 476.05 412.97 L 473.16 418.26 L 470.01 423.45 L 466.62 428.51 L 462.98 433.39 L 459.12 438.10 L 455.04 442.61 L 450.76 446.89 L 446.30 450.96 L 441.65 454.80 L 436.83 458.41 L 431.85 461.79 L 426.72 464.93 L 421.45 467.82 L 416.06 470.45 L 410.56 472.83 L 404.96 474.93 L 399.28 476.76 L 393.52 478.32 L 387.69 479.60 L 381.79 480.62 L 375.83 481.35 L 369.81 481.80 L 363.75 481.96 L 357.70 481.84 L 351.68 481.44 L 345.71 480.76 L 339.83 479.80 L 334.02 478.58 L 328.29 477.09 L 322.62 475.32 L 317.01 473.27 L 311.47 470.94 L 306.02 468.34 L 300.68 465.49 L 295.50 462.39 L 290.51 459.08 L 285.73 455.56 L 281.15 451.83 L 276.76 447.91 L 272.55 443.77 L 268.52 439.42 L 264.65 434.81 L 260.92 429.89 L 257.29 424.57 L 253.71 418.79 L 250.24 412.62 L 246.96 406.35 L 243.96 400.24 L 241.19 394.37 L 238.55 388.70 L 235.96 383.11 L 233.36 377.55 L 230.76 371.99 L 228.17 366.44 L 225.62 360.91 L 223.12 355.40 L 220.67 349.94 L 218.25 344.52 L 215.86 339.10 L 213.46 333.69 L 211.06 328.27 L 208.62 322.82 L 206.16 317.35 L 203.67 311.87 L 201.14 306.39 L 198.61 300.93 L 196.08 295.47 L 193.59 289.99 L 191.17 284.48 L 188.83 278.92 L 186.62 273.29 L 184.61 267.59 L 182.93 261.80 L 181.77 255.92 L 181.25 249.95 L 181.47 243.95 L 182.47 238.03 L 184.30 232.26 L 186.95 226.70 L 190.46 221.42 L 194.77 216.51 L 199.77 212.12 L 205.29 208.39 L 211.17 205.42 L 217.24 203.23 L 223.40 201.75 L 229.56 200.85 L 235.71 200.34 L 241.90 199.97 L 248.15 199.51 L 254.49 198.78 L 260.93 197.67 L 267.53 196.23 L 274.31 194.76 L 281.34 193.68 L 288.59 193.28 L 295.95 193.64 L 303.25 194.65 L 310.35 196.19 L 317.15 198.10 L 323.61 200.24 L 329.73 202.51 L 335.57 204.84 L 341.25 207.22 L 346.84 209.62 L 352.39 212.04 L 357.90 214.47 L 363.39 216.91 L 368.85 219.35 L 374.29 221.78 L 379.71 224.20 L 385.13 226.60 L 390.55 228.97 L 395.99 231.30 L 401.44 233.64 L 406.91 236.01 L 412.37 238.48 L 417.81 241.08 L 423.18 243.86 L 428.45 246.88 L 433.59 250.14 L 438.62 253.67 L 443.54 257.51 L 448.42 261.76 L 453.28 266.46 L 458.06 271.58 L 462.55 276.90 L 466.60 282.21 L 470.17 287.43 L 473.33 292.62 L 476.18 297.86 L 478.75 303.20 L 481.06 308.64 L 483.12 314.17 L 484.92 319.81 L 486.46 325.56 L 487.73 331.42 L 488.73 337.37 L 489.45 343.37 L 489.87 349.40 L 490.00 355.43 Z" />
-</symbol>
-</defs>
-<!-- isDone: 0 -->
-<rect width="700" height="500" style="fill:#fff;stroke-width:0" />
-<use class="p0 borderLine" xlink:href="#bl0"/>
-<use class="p1 borderLine" xlink:href="#bl1"/>
-<use class="p2 borderLine" xlink:href="#bl2"/>
-<use class="q0 outLine" xlink:href="#bl0"/>
-<use class="q1 outLine" xlink:href="#bl1"/>
-<use class="q2 outLine" xlink:href="#bl2"/>
-<circle onclick="fromCircle(4)" class="circle" cx="121.1773" cy="129.6865" r="108.8247" />
-<text class="nLabel" x="121.18" y="124.69">98</text>
-<text class="belong" x="121.18" y="134.69">(1)</text>
-<circle onclick="fromCircle(6)" class="circle" cx="259.4649" cy="167.6924" r="26.9271" />
-<text class="nLabel" x="259.46" y="162.69">6</text>
-<text class="belong" x="259.46" y="172.69">(1, 2)</text>
-<circle onclick="fromCircle(7)" class="circle" cx="274.8134" cy="208.0798" r="10.9930" />
-<text class="nLabel" x="274.81" y="203.08">1</text>
-<text class="belong" x="274.81" y="213.08">(1, 2, 3)</text>
-<circle onclick="fromCircle(2)" class="circle" cx="341.8722" cy="145.7218" r="52.7204" />
-<text class="nLabel" x="341.87" y="140.72">23</text>
-<text class="belong" x="341.87" y="150.72">(2)</text>
-<circle onclick="fromCircle(3)" class="circle" cx="307.8946" cy="216.3720" r="19.0404" />
-<text class="nLabel" x="307.89" y="211.37">3</text>
-<text class="belong" x="307.89" y="221.37">(2, 3)</text>
-<circle onclick="fromCircle(1)" class="circle" cx="363.8391" cy="356.2348" r="123.3956" />
-<text class="nLabel" x="363.84" y="351.23">126</text>
-<text class="belong" x="363.84" y="361.23">(3)</text>
-<circle onclick="fromCircle(5)" class="circle" cx="227.3481" cy="248.2636" r="43.9718" />
-<text class="nLabel" x="227.35" y="243.26">16</text>
-<text class="belong" x="227.35" y="253.26">(1, 3)</text>
-<g id="legendBox">
-<rect class="p0 borderLine" x="500.00" y="50.00" width="30.00" height="15.00" />
-<rect class="q0" x="500.00" y="50.00" width="30.00" height="15.00" />
-<text class="legend" x="540.00" y="65.00">bike ALB_2005</text>
-<rect class="p1 borderLine" x="500.00" y="90.00" width="30.00" height="15.00" />
-<rect class="q1" x="500.00" y="90.00" width="30.00" height="15.00" />
-<text class="legend" x="540.00" y="105.00">motorbike ALB_2005</text>
-<rect class="p2 borderLine" x="500.00" y="130.00" width="30.00" height="15.00" />
-<rect class="q2" x="500.00" y="130.00" width="30.00" height="15.00" />
-<text class="legend" x="540.00" y="145.00">motor_vehicle ALB_2005</text>
-</g>
+]]></style>
+    <symbol
+       id="bl0">
+      <path
+         d="M 273.81 257.74 L 271.16 263.88 L 268.07 269.71 L 264.51 275.09 L 260.47 279.93 L 255.98 284.15 L 251.07 287.69 L 245.83 290.52 L 240.37 292.62 L 234.78 293.97 L 229.13 294.60 L 223.48 294.54 L 217.85 293.84 L 212.25 292.59 L 206.69 290.89 L 201.16 288.84 L 195.66 286.56 L 190.18 284.15 L 184.72 281.71 L 179.29 279.27 L 173.87 276.88 L 168.45 274.51 L 163.02 272.19 L 157.57 269.88 L 152.11 267.58 L 146.65 265.29 L 141.22 262.99 L 135.84 260.70 L 130.50 258.40 L 125.21 256.08 L 119.95 253.73 L 114.71 251.35 L 109.49 248.95 L 104.27 246.53 L 99.05 244.09 L 93.85 241.63 L 88.67 239.14 L 83.50 236.62 L 78.34 234.04 L 73.20 231.37 L 68.10 228.56 L 63.09 225.55 L 58.21 222.32 L 53.48 218.86 L 48.94 215.17 L 44.61 211.26 L 40.50 207.14 L 36.61 202.82 L 32.97 198.30 L 29.56 193.59 L 26.40 188.69 L 23.49 183.63 L 20.85 178.42 L 18.47 173.06 L 16.37 167.57 L 14.55 161.96 L 13.02 156.26 L 11.80 150.51 L 10.89 144.70 L 10.29 138.88 L 10.00 133.05 L 10.01 127.23 L 10.32 121.44 L 10.93 115.69 L 11.81 110.00 L 12.98 104.38 L 14.43 98.84 L 16.17 93.37 L 18.21 87.96 L 20.56 82.61 L 23.21 77.35 L 26.15 72.19 L 29.36 67.18 L 32.84 62.35 L 36.56 57.71 L 40.49 53.30 L 44.63 49.12 L 48.98 45.17 L 53.52 41.47 L 58.25 38.00 L 63.16 34.78 L 68.24 31.82 L 73.48 29.12 L 78.85 26.71 L 84.35 24.57 L 89.95 22.73 L 95.63 21.18 L 101.37 19.94 L 107.16 19.01 L 112.97 18.38 L 118.80 18.06 L 124.61 18.04 L 130.41 18.32 L 136.16 18.89 L 141.87 19.75 L 147.52 20.91 L 153.08 22.36 L 158.56 24.10 L 163.94 26.12 L 169.22 28.42 L 174.39 31.00 L 179.46 33.87 L 184.42 37.03 L 189.24 40.48 L 193.93 44.18 L 198.44 48.14 L 202.77 52.31 L 206.91 56.65 L 210.85 61.12 L 214.64 65.65 L 218.32 70.18 L 221.95 74.67 L 225.56 79.11 L 229.16 83.51 L 232.77 87.89 L 236.40 92.26 L 240.08 96.64 L 243.81 101.04 L 247.59 105.44 L 251.39 109.83 L 255.22 114.20 L 259.04 118.57 L 262.84 122.98 L 266.61 127.45 L 270.33 131.98 L 273.98 136.58 L 277.49 141.33 L 280.76 146.35 L 283.64 151.82 L 285.98 157.83 L 287.73 164.34 L 288.86 171.24 L 289.37 178.39 L 289.32 185.70 L 288.85 193.02 L 288.06 200.19 L 287.06 207.08 L 285.90 213.67 L 284.60 220.02 L 283.18 226.23 L 281.63 232.44 L 279.94 238.72 L 278.12 245.06 L 276.10 251.43 Z"
+         id="path1234" />
+    </symbol>
+    <symbol
+       id="bl1">
+      <path
+         d="M 328.36 229.66 L 325.53 231.72 L 322.72 233.64 L 319.90 235.34 L 317.03 236.74 L 314.10 237.79 L 311.09 238.45 L 308.00 238.68 L 304.86 238.49 L 301.69 237.89 L 298.51 236.92 L 295.27 235.64 L 291.95 234.16 L 288.55 232.55 L 285.15 230.85 L 281.81 229.10 L 278.51 227.30 L 275.23 225.40 L 271.97 223.36 L 268.82 221.10 L 265.88 218.61 L 263.15 215.97 L 260.57 213.28 L 258.10 210.64 L 255.67 208.11 L 253.25 205.67 L 250.82 203.33 L 248.36 201.04 L 245.88 198.74 L 243.39 196.38 L 240.91 193.86 L 238.50 191.13 L 236.24 188.14 L 234.21 184.93 L 232.46 181.52 L 231.04 177.95 L 230.04 174.25 L 229.49 170.46 L 229.41 166.75 L 229.73 163.22 L 230.38 159.92 L 231.27 156.81 L 232.39 153.86 L 233.76 151.09 L 235.42 148.50 L 237.40 146.12 L 239.69 143.97 L 242.24 142.01 L 244.93 140.17 L 247.68 138.40 L 250.45 136.67 L 253.21 134.95 L 255.97 133.22 L 258.72 131.49 L 261.45 129.73 L 264.17 127.95 L 266.89 126.16 L 269.62 124.37 L 272.37 122.61 L 275.13 120.86 L 277.91 119.09 L 280.70 117.30 L 283.51 115.49 L 286.32 113.67 L 289.13 111.87 L 291.94 110.09 L 294.73 108.35 L 297.51 106.64 L 300.25 104.94 L 302.94 103.23 L 305.60 101.49 L 308.26 99.75 L 310.98 98.05 L 313.79 96.43 L 316.71 94.94 L 319.71 93.60 L 322.80 92.44 L 325.95 91.47 L 329.13 90.67 L 332.34 90.06 L 335.55 89.63 L 338.76 89.38 L 341.96 89.31 L 345.15 89.42 L 348.31 89.69 L 351.43 90.15 L 354.52 90.77 L 357.58 91.56 L 360.60 92.54 L 363.58 93.70 L 366.50 95.03 L 369.37 96.55 L 372.16 98.25 L 374.88 100.10 L 377.51 102.13 L 380.05 104.32 L 382.48 106.68 L 384.77 109.21 L 386.92 111.89 L 388.90 114.68 L 390.69 117.54 L 392.29 120.47 L 393.70 123.42 L 394.91 126.38 L 395.93 129.35 L 396.75 132.34 L 397.38 135.35 L 397.84 138.39 L 398.13 141.47 L 398.27 144.60 L 398.23 147.78 L 398.03 150.99 L 397.63 154.22 L 397.05 157.44 L 396.28 160.62 L 395.31 163.78 L 394.12 166.95 L 392.66 170.18 L 390.93 173.46 L 388.99 176.66 L 386.89 179.68 L 384.69 182.46 L 382.39 185.03 L 380.02 187.44 L 377.59 189.70 L 375.13 191.85 L 372.68 193.91 L 370.23 195.91 L 367.79 197.92 L 365.36 199.97 L 362.92 202.07 L 360.48 204.20 L 358.03 206.35 L 355.57 208.49 L 353.10 210.60 L 350.60 212.69 L 348.05 214.76 L 345.41 216.84 L 342.68 218.95 L 339.86 221.09 L 337.00 223.24 L 334.10 225.40 L 331.21 227.55 Z"
+         id="path1237" />
+    </symbol>
+    <symbol
+       id="bl2">
+      <path
+         d="M 489.84 361.44 L 489.39 367.42 L 488.67 373.37 L 487.67 379.25 L 486.41 385.08 L 484.88 390.83 L 483.08 396.49 L 481.01 402.07 L 478.66 407.57 L 476.05 412.97 L 473.16 418.26 L 470.01 423.45 L 466.62 428.51 L 462.98 433.39 L 459.12 438.10 L 455.04 442.61 L 450.76 446.89 L 446.30 450.96 L 441.65 454.80 L 436.83 458.41 L 431.85 461.79 L 426.72 464.93 L 421.45 467.82 L 416.06 470.45 L 410.56 472.83 L 404.96 474.93 L 399.28 476.76 L 393.52 478.32 L 387.69 479.60 L 381.79 480.62 L 375.83 481.35 L 369.81 481.80 L 363.75 481.96 L 357.70 481.84 L 351.68 481.44 L 345.71 480.76 L 339.83 479.80 L 334.02 478.58 L 328.29 477.09 L 322.62 475.32 L 317.01 473.27 L 311.47 470.94 L 306.02 468.34 L 300.68 465.49 L 295.50 462.39 L 290.51 459.08 L 285.73 455.56 L 281.15 451.83 L 276.76 447.91 L 272.55 443.77 L 268.52 439.42 L 264.65 434.81 L 260.92 429.89 L 257.29 424.57 L 253.71 418.79 L 250.24 412.62 L 246.96 406.35 L 243.96 400.24 L 241.19 394.37 L 238.55 388.70 L 235.96 383.11 L 233.36 377.55 L 230.76 371.99 L 228.17 366.44 L 225.62 360.91 L 223.12 355.40 L 220.67 349.94 L 218.25 344.52 L 215.86 339.10 L 213.46 333.69 L 211.06 328.27 L 208.62 322.82 L 206.16 317.35 L 203.67 311.87 L 201.14 306.39 L 198.61 300.93 L 196.08 295.47 L 193.59 289.99 L 191.17 284.48 L 188.83 278.92 L 186.62 273.29 L 184.61 267.59 L 182.93 261.80 L 181.77 255.92 L 181.25 249.95 L 181.47 243.95 L 182.47 238.03 L 184.30 232.26 L 186.95 226.70 L 190.46 221.42 L 194.77 216.51 L 199.77 212.12 L 205.29 208.39 L 211.17 205.42 L 217.24 203.23 L 223.40 201.75 L 229.56 200.85 L 235.71 200.34 L 241.90 199.97 L 248.15 199.51 L 254.49 198.78 L 260.93 197.67 L 267.53 196.23 L 274.31 194.76 L 281.34 193.68 L 288.59 193.28 L 295.95 193.64 L 303.25 194.65 L 310.35 196.19 L 317.15 198.10 L 323.61 200.24 L 329.73 202.51 L 335.57 204.84 L 341.25 207.22 L 346.84 209.62 L 352.39 212.04 L 357.90 214.47 L 363.39 216.91 L 368.85 219.35 L 374.29 221.78 L 379.71 224.20 L 385.13 226.60 L 390.55 228.97 L 395.99 231.30 L 401.44 233.64 L 406.91 236.01 L 412.37 238.48 L 417.81 241.08 L 423.18 243.86 L 428.45 246.88 L 433.59 250.14 L 438.62 253.67 L 443.54 257.51 L 448.42 261.76 L 453.28 266.46 L 458.06 271.58 L 462.55 276.90 L 466.60 282.21 L 470.17 287.43 L 473.33 292.62 L 476.18 297.86 L 478.75 303.20 L 481.06 308.64 L 483.12 314.17 L 484.92 319.81 L 486.46 325.56 L 487.73 331.42 L 488.73 337.37 L 489.45 343.37 L 489.87 349.40 L 490.00 355.43 Z"
+         id="path1240" />
+    </symbol>
+    <filter
+       style="color-interpolation-filters:sRGB;"
+       inkscape:label="Invert"
+       id="filter1326"
+       x="-0.0024250749"
+       y="-0.0051030324"
+       width="1.0024251"
+       height="1.005103">
+      <feColorMatrix
+         values="0 0 -1 0 1 0 -1 0 0 1 -1 0 0 0 1 0.21 0.72 0.07 1 0 "
+         result="color2"
+         id="feColorMatrix1324" />
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB;"
+       inkscape:label="Invert"
+       id="filter1330"
+       x="0"
+       y="0"
+       width="1"
+       height="1">
+      <feColorMatrix
+         values="0 0 -1 0 1 0 -1 0 0 1 -1 0 0 0 1 0.21 0.72 0.07 1 0 "
+         result="color2"
+         id="feColorMatrix1328" />
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB;"
+       inkscape:label="Invert"
+       id="filter1334"
+       x="0"
+       y="0"
+       width="1"
+       height="1">
+      <feColorMatrix
+         values="0 0 -1 0 1 0 -1 0 0 1 -1 0 0 0 1 0.21 0.72 0.07 1 0 "
+         result="color2"
+         id="feColorMatrix1332" />
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB;"
+       inkscape:label="Invert"
+       id="filter1338"
+       x="-0.0028427309"
+       y="-0.0028427309"
+       width="1.0056855"
+       height="1.0056855">
+      <feColorMatrix
+         values="0 0 -1 0 1 0 -1 0 0 1 -1 0 0 0 1 0.21 0.72 0.07 1 0 "
+         result="color2"
+         id="feColorMatrix1336" />
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB;"
+       inkscape:label="Invert"
+       id="filter1342"
+       x="0"
+       y="0"
+       width="1"
+       height="1">
+      <feColorMatrix
+         values="0 0 -1 0 1 0 -1 0 0 1 -1 0 0 0 1 0.21 0.72 0.07 1 0 "
+         result="color2"
+         id="feColorMatrix1340" />
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB;"
+       inkscape:label="Invert"
+       id="filter1346"
+       x="0"
+       y="0"
+       width="1"
+       height="1">
+      <feColorMatrix
+         values="0 0 -1 0 1 0 -1 0 0 1 -1 0 0 0 1 0.21 0.72 0.07 1 0 "
+         result="color2"
+         id="feColorMatrix1344" />
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB;"
+       inkscape:label="Invert"
+       id="filter1350"
+       x="-0.0010130021"
+       y="-0.0010130021"
+       width="1.002026"
+       height="1.002026">
+      <feColorMatrix
+         values="0 0 -1 0 1 0 -1 0 0 1 -1 0 0 0 1 0.21 0.72 0.07 1 0 "
+         result="color2"
+         id="feColorMatrix1348" />
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB;"
+       inkscape:label="Invert"
+       id="filter1354"
+       x="0"
+       y="0"
+       width="1"
+       height="1">
+      <feColorMatrix
+         values="0 0 -1 0 1 0 -1 0 0 1 -1 0 0 0 1 0.21 0.72 0.07 1 0 "
+         result="color2"
+         id="feColorMatrix1352" />
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB;"
+       inkscape:label="Invert"
+       id="filter1358"
+       x="0"
+       y="0"
+       width="1"
+       height="1">
+      <feColorMatrix
+         values="0 0 -1 0 1 0 -1 0 0 1 -1 0 0 0 1 0.21 0.72 0.07 1 0 "
+         result="color2"
+         id="feColorMatrix1356" />
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB;"
+       inkscape:label="Invert"
+       id="filter1362"
+       x="-0.0065649883"
+       y="-0.0065649883"
+       width="1.01313"
+       height="1.01313">
+      <feColorMatrix
+         values="0 0 -1 0 1 0 -1 0 0 1 -1 0 0 0 1 0.21 0.72 0.07 1 0 "
+         result="color2"
+         id="feColorMatrix1360" />
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB;"
+       inkscape:label="Invert"
+       id="filter1366"
+       x="0"
+       y="0"
+       width="1"
+       height="1">
+      <feColorMatrix
+         values="0 0 -1 0 1 0 -1 0 0 1 -1 0 0 0 1 0.21 0.72 0.07 1 0 "
+         result="color2"
+         id="feColorMatrix1364" />
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB;"
+       inkscape:label="Invert"
+       id="filter1370"
+       x="0"
+       y="0"
+       width="1"
+       height="1">
+      <feColorMatrix
+         values="0 0 -1 0 1 0 -1 0 0 1 -1 0 0 0 1 0.21 0.72 0.07 1 0 "
+         result="color2"
+         id="feColorMatrix1368" />
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB;"
+       inkscape:label="Invert"
+       id="filter1374"
+       x="-0.0023709986"
+       y="-0.0023709986"
+       width="1.004742"
+       height="1.004742">
+      <feColorMatrix
+         values="0 0 -1 0 1 0 -1 0 0 1 -1 0 0 0 1 0.21 0.72 0.07 1 0 "
+         result="color2"
+         id="feColorMatrix1372" />
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB;"
+       inkscape:label="Invert"
+       id="filter1378"
+       x="0"
+       y="0"
+       width="1"
+       height="1">
+      <feColorMatrix
+         values="0 0 -1 0 1 0 -1 0 0 1 -1 0 0 0 1 0.21 0.72 0.07 1 0 "
+         result="color2"
+         id="feColorMatrix1376" />
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB;"
+       inkscape:label="Invert"
+       id="filter1382"
+       x="0"
+       y="0"
+       width="1"
+       height="1">
+      <feColorMatrix
+         values="0 0 -1 0 1 0 -1 0 0 1 -1 0 0 0 1 0.21 0.72 0.07 1 0 "
+         result="color2"
+         id="feColorMatrix1380" />
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB;"
+       inkscape:label="Invert"
+       id="filter1386"
+       x="-0.011370872"
+       y="-0.011370872"
+       width="1.0227417"
+       height="1.0227417">
+      <feColorMatrix
+         values="0 0 -1 0 1 0 -1 0 0 1 -1 0 0 0 1 0.21 0.72 0.07 1 0 "
+         result="color2"
+         id="feColorMatrix1384" />
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB;"
+       inkscape:label="Invert"
+       id="filter1390"
+       x="0"
+       y="0"
+       width="1"
+       height="1">
+      <feColorMatrix
+         values="0 0 -1 0 1 0 -1 0 0 1 -1 0 0 0 1 0.21 0.72 0.07 1 0 "
+         result="color2"
+         id="feColorMatrix1388" />
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB;"
+       inkscape:label="Invert"
+       id="filter1394"
+       x="0"
+       y="0"
+       width="1"
+       height="1">
+      <feColorMatrix
+         values="0 0 -1 0 1 0 -1 0 0 1 -1 0 0 0 1 0.21 0.72 0.07 1 0 "
+         result="color2"
+         id="feColorMatrix1392" />
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB;"
+       inkscape:label="Invert"
+       id="filter1398"
+       x="-0.0046421636"
+       y="-0.0046421636"
+       width="1.0092843"
+       height="1.0092843">
+      <feColorMatrix
+         values="0 0 -1 0 1 0 -1 0 0 1 -1 0 0 0 1 0.21 0.72 0.07 1 0 "
+         result="color2"
+         id="feColorMatrix1396" />
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB;"
+       inkscape:label="Invert"
+       id="filter1402"
+       x="0"
+       y="0"
+       width="1"
+       height="1">
+      <feColorMatrix
+         values="0 0 -1 0 1 0 -1 0 0 1 -1 0 0 0 1 0.21 0.72 0.07 1 0 "
+         result="color2"
+         id="feColorMatrix1400" />
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB;"
+       inkscape:label="Invert"
+       id="filter1406"
+       x="0"
+       y="0"
+       width="1"
+       height="1">
+      <feColorMatrix
+         values="0 0 -1 0 1 0 -1 0 0 1 -1 0 0 0 1 0.21 0.72 0.07 1 0 "
+         result="color2"
+         id="feColorMatrix1404" />
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB;"
+       inkscape:label="Invert"
+       id="filter1410"
+       x="-0.0011486363"
+       y="-0.0011486363"
+       width="1.0022973"
+       height="1.0022973">
+      <feColorMatrix
+         values="0 0 -1 0 1 0 -1 0 0 1 -1 0 0 0 1 0.21 0.72 0.07 1 0 "
+         result="color2"
+         id="feColorMatrix1408" />
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB;"
+       inkscape:label="Invert"
+       id="filter1414"
+       x="-0.0016220155"
+       y="-0.0017343571"
+       width="1.0032419"
+       height="1.0034668">
+      <feColorMatrix
+         values="0 0 -1 0 1 0 -1 0 0 1 -1 0 0 0 1 0.21 0.72 0.07 1 0 "
+         result="color2"
+         id="feColorMatrix1412" />
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB;"
+       inkscape:label="Invert"
+       id="filter1418"
+       x="-0.002963922"
+       y="-0.0033486546"
+       width="1.0059258"
+       height="1.0067036">
+      <feColorMatrix
+         values="0 0 -1 0 1 0 -1 0 0 1 -1 0 0 0 1 0.21 0.72 0.07 1 0 "
+         result="color2"
+         id="feColorMatrix1416" />
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB;"
+       inkscape:label="Invert"
+       id="filter1422"
+       x="-0.0017898176"
+       y="-0.0018080761"
+       width="1.00358"
+       height="1.0036171">
+      <feColorMatrix
+         values="0 0 -1 0 1 0 -1 0 0 1 -1 0 0 0 1 0.21 0.72 0.07 1 0 "
+         result="color2"
+         id="feColorMatrix1420" />
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB;"
+       inkscape:label="Invert"
+       id="filter1426"
+       x="0"
+       y="0"
+       width="1"
+       height="1">
+      <feColorMatrix
+         values="0 0 -1 0 1 0 -1 0 0 1 -1 0 0 0 1 0.21 0.72 0.07 1 0 "
+         result="color2"
+         id="feColorMatrix1424" />
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB;"
+       inkscape:label="Invert"
+       id="filter1430"
+       x="0"
+       y="0"
+       width="1"
+       height="1">
+      <feColorMatrix
+         values="0 0 -1 0 1 0 -1 0 0 1 -1 0 0 0 1 0.21 0.72 0.07 1 0 "
+         result="color2"
+         id="feColorMatrix1428" />
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB;"
+       inkscape:label="Invert"
+       id="filter1434"
+       x="0"
+       y="0"
+       width="1"
+       height="1">
+      <feColorMatrix
+         values="0 0 -1 0 1 0 -1 0 0 1 -1 0 0 0 1 0.21 0.72 0.07 1 0 "
+         result="color2"
+         id="feColorMatrix1432" />
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB;"
+       inkscape:label="Invert"
+       id="filter1438"
+       x="0"
+       y="0"
+       width="1"
+       height="1">
+      <feColorMatrix
+         values="0 0 -1 0 1 0 -1 0 0 1 -1 0 0 0 1 0.21 0.72 0.07 1 0 "
+         result="color2"
+         id="feColorMatrix1436" />
+    </filter>
+  </defs>
+  <!-- isDone: 0 -->
+  <rect
+     width="700"
+     height="500"
+     style="fill:#fff;stroke-width:0;filter:url(#filter1438)"
+     id="rect1245" />
+  <use
+     class="p0 borderLine"
+     xlink:href="#bl0"
+     id="use1247"
+     style="filter:url(#filter1434)" />
+  <use
+     class="p1 borderLine"
+     xlink:href="#bl1"
+     id="use1249"
+     style="filter:url(#filter1430)" />
+  <use
+     class="p2 borderLine"
+     xlink:href="#bl2"
+     id="use1251"
+     style="filter:url(#filter1426)" />
+  <use
+     class="q0 outLine"
+     xlink:href="#bl0"
+     id="use1253"
+     style="filter:url(#filter1422)" />
+  <use
+     class="q1 outLine"
+     xlink:href="#bl1"
+     id="use1255"
+     style="filter:url(#filter1418)" />
+  <use
+     class="q2 outLine"
+     xlink:href="#bl2"
+     id="use1257"
+     style="filter:url(#filter1414)" />
+  <circle
+     onclick="fromCircle(4)"
+     class="circle"
+     cx="121.1773"
+     cy="129.6865"
+     r="108.8247"
+     id="circle1259"
+     style="filter:url(#filter1410)" />
+  <text
+     class="nLabel"
+     x="121.18"
+     y="124.69"
+     id="text1261"
+     style="filter:url(#filter1406)">98</text>
+  <text
+     class="belong"
+     x="121.18"
+     y="134.69"
+     id="text1263"
+     style="filter:url(#filter1402)">(1)</text>
+  <circle
+     onclick="fromCircle(6)"
+     class="circle"
+     cx="259.4649"
+     cy="167.6924"
+     r="26.9271"
+     id="circle1265"
+     style="filter:url(#filter1398)" />
+  <text
+     class="nLabel"
+     x="259.46"
+     y="162.69"
+     id="text1267"
+     style="filter:url(#filter1394)">6</text>
+  <text
+     class="belong"
+     x="259.46"
+     y="172.69"
+     id="text1269"
+     style="filter:url(#filter1390)">(1, 2)</text>
+  <circle
+     onclick="fromCircle(7)"
+     class="circle"
+     cx="274.8134"
+     cy="208.0798"
+     r="10.9930"
+     id="circle1271"
+     style="filter:url(#filter1386)" />
+  <text
+     class="nLabel"
+     x="274.81"
+     y="203.08"
+     id="text1273"
+     style="filter:url(#filter1382)">1</text>
+  <text
+     class="belong"
+     x="274.81"
+     y="213.08"
+     id="text1275"
+     style="filter:url(#filter1378)">(1, 2, 3)</text>
+  <circle
+     onclick="fromCircle(2)"
+     class="circle"
+     cx="341.8722"
+     cy="145.7218"
+     r="52.7204"
+     id="circle1277"
+     style="filter:url(#filter1374)" />
+  <text
+     class="nLabel"
+     x="341.87"
+     y="140.72"
+     id="text1279"
+     style="filter:url(#filter1370)">23</text>
+  <text
+     class="belong"
+     x="341.87"
+     y="150.72"
+     id="text1281"
+     style="filter:url(#filter1366)">(2)</text>
+  <circle
+     onclick="fromCircle(3)"
+     class="circle"
+     cx="307.8946"
+     cy="216.3720"
+     r="19.0404"
+     id="circle1283"
+     style="filter:url(#filter1362)" />
+  <text
+     class="nLabel"
+     x="307.89"
+     y="211.37"
+     id="text1285"
+     style="filter:url(#filter1358)">3</text>
+  <text
+     class="belong"
+     x="307.89"
+     y="221.37"
+     id="text1287"
+     style="filter:url(#filter1354)">(2, 3)</text>
+  <circle
+     onclick="fromCircle(1)"
+     class="circle"
+     cx="363.8391"
+     cy="356.2348"
+     r="123.3956"
+     id="circle1289"
+     style="filter:url(#filter1350)" />
+  <text
+     class="nLabel"
+     x="363.84"
+     y="351.23"
+     id="text1291"
+     style="filter:url(#filter1346)">126</text>
+  <text
+     class="belong"
+     x="363.84"
+     y="361.23"
+     id="text1293"
+     style="filter:url(#filter1342)">(3)</text>
+  <circle
+     onclick="fromCircle(5)"
+     class="circle"
+     cx="227.3481"
+     cy="248.2636"
+     r="43.9718"
+     id="circle1295"
+     style="filter:url(#filter1338)" />
+  <text
+     class="nLabel"
+     x="227.35"
+     y="243.26"
+     id="text1297"
+     style="filter:url(#filter1334)">16</text>
+  <text
+     class="belong"
+     x="227.35"
+     y="253.26"
+     id="text1299"
+     style="filter:url(#filter1330)">(1, 3)</text>
+  <g
+     id="legendBox"
+     style="filter:url(#filter1326)">
+    <rect
+       class="p0 borderLine"
+       x="500.00"
+       y="50.00"
+       width="30.00"
+       height="15.00"
+       id="rect1301" />
+    <rect
+       class="q0"
+       x="500.00"
+       y="50.00"
+       width="30.00"
+       height="15.00"
+       id="rect1303" />
+    <text
+       class="legend"
+       x="540.00"
+       y="65.00"
+       id="text1305">bike ALB_2005</text>
+    <rect
+       class="p1 borderLine"
+       x="500.00"
+       y="90.00"
+       width="30.00"
+       height="15.00"
+       id="rect1307" />
+    <rect
+       class="q1"
+       x="500.00"
+       y="90.00"
+       width="30.00"
+       height="15.00"
+       id="rect1309" />
+    <text
+       class="legend"
+       x="540.00"
+       y="105.00"
+       id="text1311">motorbike ALB_2005</text>
+    <rect
+       class="p2 borderLine"
+       x="500.00"
+       y="130.00"
+       width="30.00"
+       height="15.00"
+       id="rect1313" />
+    <rect
+       class="q2"
+       x="500.00"
+       y="130.00"
+       width="30.00"
+       height="15.00"
+       id="rect1315" />
+    <text
+       class="legend"
+       x="540.00"
+       y="145.00"
+       id="text1317">motor_vehicle ALB_2005</text>
+  </g>
 </svg>
