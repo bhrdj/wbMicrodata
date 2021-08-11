@@ -22,7 +22,7 @@
      showgrid="false"
      inkscape:zoom="1.328"
      inkscape:cx="349.7741"
-     inkscape:cy="250"
+     inkscape:cy="250.37651"
      inkscape:window-width="1528"
      inkscape:window-height="836"
      inkscape:window-x="72"
@@ -116,9 +116,9 @@
        style="color-interpolation-filters:sRGB;"
        inkscape:label="Invert"
        id="filter3421"
-       x="-0.0023691913"
+       x="-0.0037663675"
        y="-0.0051030324"
-       width="1.0023692"
+       width="1.0037664"
        height="1.005103">
       <feColorMatrix
          values="0 0 -1 0 1 0 -1 0 0 1 -1 0 0 0 1 0.21 0.72 0.07 1 0 "
@@ -687,7 +687,7 @@
        class="legend"
        x="540.00"
        y="65.00"
-       id="text3400">bike UGA_2010</text>
+       id="text3400">bike</text>
     <rect
        class="p1 borderLine"
        x="500.00"
@@ -706,7 +706,7 @@
        class="legend"
        x="540.00"
        y="105.00"
-       id="text3406">motorbike UGA_2010</text>
+       id="text3406">motorbike</text>
     <rect
        class="p2 borderLine"
        x="500.00"
@@ -725,6 +725,6 @@
        class="legend"
        x="540.00"
        y="145.00"
-       id="text3412">motor_vehicle UGA_2010</text>
+       id="text3412">motor_vehicle</text>
   </g>
 </svg>

@@ -116,9 +116,9 @@
        style="color-interpolation-filters:sRGB;"
        inkscape:label="Invert"
        id="filter509"
-       x="-0.0024050826"
+       x="-0.0037663675"
        y="-0.0051030324"
-       width="1.0024051"
+       width="1.0037664"
        height="1.005103">
       <feColorMatrix
          values="0 0 -1 0 1 0 -1 0 0 1 -1 0 0 0 1 0.21 0.72 0.07 1 0 "
@@ -628,7 +628,7 @@
        class="legend"
        x="540.00"
        y="65.00"
-       id="text488">bike UGA_2011</text>
+       id="text488">bike</text>
     <rect
        class="p1 borderLine"
        x="500.00"
@@ -647,7 +647,7 @@
        class="legend"
        x="540.00"
        y="105.00"
-       id="text494">motorbike UGA_2011</text>
+       id="text494">motorbike</text>
     <rect
        class="p2 borderLine"
        x="500.00"
@@ -666,6 +666,6 @@
        class="legend"
        x="540.00"
        y="145.00"
-       id="text500">motor_vehicle UGA_2011</text>
+       id="text500">motor_vehicle</text>
   </g>
 </svg>

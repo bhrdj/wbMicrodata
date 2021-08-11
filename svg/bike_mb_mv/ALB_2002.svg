@@ -116,9 +116,9 @@
        style="color-interpolation-filters:sRGB;"
        inkscape:label="Invert"
        id="filter96"
-       x="-0.0024273168"
+       x="-0.0037663675"
        y="-0.0051030324"
-       width="1.0024273"
+       width="1.0037664"
        height="1.005103">
       <feColorMatrix
          values="0 0 -1 0 1 0 -1 0 0 1 -1 0 0 0 1 0.21 0.72 0.07 1 0 "
@@ -687,7 +687,7 @@
        class="legend"
        x="540.00"
        y="65.00"
-       id="text75">bike ALB_2002</text>
+       id="text75">bike</text>
     <rect
        class="p1 borderLine"
        x="500.00"
@@ -706,7 +706,7 @@
        class="legend"
        x="540.00"
        y="105.00"
-       id="text81">motorbike ALB_2002</text>
+       id="text81">motorbike</text>
     <rect
        class="p2 borderLine"
        x="500.00"
@@ -725,6 +725,6 @@
        class="legend"
        x="540.00"
        y="145.00"
-       id="text87">motor_vehicle ALB_2002</text>
+       id="text87">motor_vehicle</text>
   </g>
 </svg>

@@ -10,7 +10,12 @@ output:
     code_folding: hide
 ---
 <style type="text/css" media="screen, print">
-
+.body {
+  background-color: #000;
+}
+hr {
+  background-color: #fff;
+}
 h1.title {
   padding-top: 2em;
   text-align: center;
@@ -30,7 +35,7 @@ h4.date {
   font-size: 1em;
   text-align: center;
   margin: auto;
-  width: 70%;
+  width: 60%;
 }
 .width_auto {
   width: auto;
@@ -45,11 +50,6 @@ h4.date {
   top: 3%;
   left: 50%;
   transform: translate(-50%, 0%);
-}
-hr{
-  height: 1px;
-  background-color: #FFF;
-  border: none;
 }
 .column {
   float: left;
@@ -66,6 +66,7 @@ hr{
     width: 100%;
   }
 }
+
 </style>
 
 ```{r setup, include=FALSE}
@@ -81,6 +82,9 @@ library(haven)
 library(slickR)
 library(htmlwidgets)
 library(htmltools)
+source("./unofficial_libraries/iso_to_emoji.r")
+#library(leaflet)
+
 ```
 
 <!-- 
@@ -97,62 +101,68 @@ bhrdwj.net
 
 <!-- MAIN BODY -->
 ### Abstract
-The World Bank took very detailed surveys of representative samples of households in a bunch of countries. Here, I asked the data which families had bicycles, motorbikes, or motor vehicles, and then made Venn Diagrams out of the results.
+The World Bank took very detailed surveys of representative samples of households in a bunch of countries. Uganda and Albania each had multiple years of data, so I downloaded those. I checked which families from the surveys had bicycles, motorbikes, or motor vehicles, and then made Venn Diagrams out of the results.
 
 <hr> ### Plots
 - Sample is normalized to 1000 households in each graph.
     - So in each of these plots, more than half (500+/1000) of the sampled households had no vehicle in the household.
 - Swipe the charts to compare different countries and years. Available are:
-    - Albania: 2002, 2005, 2012
-    - Uganda: 2010, 2011, 2013, 2015, 2018, 2019
-
-<div class="row"><div class="column center_plots">
-``` {r}
-#eval=FALSE, include=FALSE}
-alb_uris <- c("http://bhrdwj.net/r/svg/ALB_2002.svg", 
-             "http://bhrdwj.net/r/svg/ALB_2005.svg", 
-             "http://bhrdwj.net/r/svg/ALB_2012.svg",
-             "http://bhrdwj.net/r/svg/UGA_2010.svg", 
-             "http://bhrdwj.net/r/svg/UGA_2011.svg", 
-             "http://bhrdwj.net/r/svg/UGA_2013.svg", 
-             "http://bhrdwj.net/r/svg/UGA_2015.svg", 
-             "http://bhrdwj.net/r/svg/UGA_2018.svg", 
-             "http://bhrdwj.net/r/svg/UGA_2019.svg")
-slickR(obj = alb_uris, width = "90%", height = 300)
-```
-</div><div class="column center_plots">
-``` {r}
-#eval=FALSE, include=FALSE}
-uga_uris <- c("http://bhrdwj.net/r/svg/ALB_2002.svg", 
-             "http://bhrdwj.net/r/svg/ALB_2005.svg", 
-             "http://bhrdwj.net/r/svg/ALB_2012.svg",
-             "http://bhrdwj.net/r/svg/UGA_2010.svg", 
-             "http://bhrdwj.net/r/svg/UGA_2011.svg", 
-             "http://bhrdwj.net/r/svg/UGA_2013.svg", 
-             "http://bhrdwj.net/r/svg/UGA_2015.svg", 
-             "http://bhrdwj.net/r/svg/UGA_2018.svg", 
-             "http://bhrdwj.net/r/svg/UGA_2019.svg")
-slickR(obj = uga_uris, width = "90%", height = 300)
-```
-</div></div> 
-
+    - Albania `r iso_to_emoji_unicode("AL")``: 2002, 2005, 2012
+    - Uganda `r iso_to_emoji_unicode("UG")`: 2010, 2011, 2013, 2015, 2018, 2019
 
 <div class="center_plots">
+
+``` {r}
+#eval=FALSE, include=FALSE}
+# what worked for editing some css inside the slider:
+  # https://giters.com/yonicd/slickR/issues/58?amp=1
+  # but still can't fix the background color haha
+
+uri_df <- data.frame(
+  country = c("AL", "AL", "AL", "UG", "UG", "UG", "UG", "UG", "UG"),
+  year =    c( 2002, 2005, 2012, 2010, 2010, 2011, 2013, 2015, 2018),
+  paths =  c("http://bhrdwj.net/r/svg/ALB_2002.svg", 
+             "http://bhrdwj.net/r/svg/ALB_2005.svg", 
+             "http://bhrdwj.net/r/svg/ALB_2012.svg",
+             "http://bhrdwj.net/r/svg/UGA_2010.svg", 
+             "http://bhrdwj.net/r/svg/UGA_2011.svg", 
+             "http://bhrdwj.net/r/svg/UGA_2013.svg", 
+             "http://bhrdwj.net/r/svg/UGA_2015.svg", 
+             "http://bhrdwj.net/r/svg/UGA_2018.svg", 
+             "http://bhrdwj.net/r/svg/UGA_2019.svg"
+  )
+) %>%
+  mutate(flag = iso_to_emoji_unicode(country))
+
+slickR_strings <- paste(uri_df$country, uri_df$flag, uri_df$year, sep=" ")
+
+captions_dom <- slick_list(lapply(slickR_strings, function(x) 
+  htmltools::tags$p(x,style = htmltools::css(color="#FFF", "background-color"='#000'))
+  ))
+
+slickR(obj = uri_df$paths, width = "100%", height = 400) %synch%
+  ( slickR(obj = captions_dom, slideType = 'p') + settings(arrows = FALSE) )
+
+
+```
+
+``` {r echo=FALSE, results=TRUE}
+#eval=FALSE
+(slickR(obj = uri_df$paths, width = "100%", height=400) + settings(initialSlide = 4)) %synch%
+  ( slickR(obj = captions_dom, slideType = 'p') + settings(arrows = FALSE, initialSlide = 4) )
+
+```
+
 <br>
-
-
-<br><br>
-
 
 </div>
 
+<br>
 <hr> 
 
 ### Discussion
 
 I was particularly surprised at how many Albanian households didn't report owning any kind of vehicle in the survey. 🤔 
-
-I have a bunch more plots, but am working on getting javascript working to swipe through them. Summary statistics and more also forthcoming.
 
 <hr>
 ## Code
@@ -163,9 +173,15 @@ library(readr)
 library(nVennR)
 library(magrittr)
 library(haven)
+library(slickR)
+library(htmlwidgets)
+library(htmltools)
+source("./unofficial_libraries/iso_to_emoji.r")
 ```
 <hr> ### Raw-data Pathnames
-```{r eval=FALSE}
+```{r}
+#eval=FALSE}
+
 # data source: 
 # https://microdata.worldbank.org/index.php/catalog/lsms
 
@@ -187,7 +203,8 @@ UGA_paths <- list(
 )
 ```
 <hr> ### List of field-names for data cleaning
-```{r eval=FALSE}
+```{r}
+#eval=FALSE}
 ALB_vars <- list(
   ALB_2002 = list(item_names = "m3c_q01a", item_codes = "m3c_q01b" , num_owned = "m3c_q01c" ),
   ALB_2005 = list(item_names = "m13c1_q1a", item_codes = "m13c1_q1b" , num_owned = "m13c1_q1c"),
@@ -195,9 +212,9 @@ ALB_vars <- list(
 )
 ```
 <hr> ### Data-cleaning for Albania data
-```{r eval=FALSE}
-# ALB
-# Loop through the years
+```{r}
+#eval=FALSE}
+# Loop through the years for Albania
   # Each year, make a tidy data frame of household observations
 df_list <- list()
 for (key in names(ALB_paths)) {
@@ -231,7 +248,8 @@ for (key in names(ALB_paths)) {
 }
 ```
 <hr> ### Data-cleaning for Uganda data
-```{r eval=FALSE}
+```{r}
+#eval=FALSE}
 # UGA
 for (key in names(UGA_paths)) {
   df_list[[{{key}}]] <- UGA_paths[[key]] %>%
@@ -251,8 +269,8 @@ for (key in names(UGA_paths)) {
 ```
 <hr> ### Plot
 ```{r warning=FALSE, message=FALSE, results=FALSE, eval=FALSE}
-# loop through the years
-  # each year, make a plot with normalized scale
+# Loop through the years for Uganda
+  # Each year, make a plot with normalized scale
 for (key in names(df_list)) {
   # THIS FIRST RUN OF plotVenn ONLY RETRIEVES THE $def OUTPUT, FOR RESCALING
   myV <- plotVenn(list(
@@ -269,7 +287,7 @@ for (key in names(df_list)) {
   a <- 3 + nSets
   b <- length(myV)
   n_hh <- length(df_list[[key]]$hhid)
-  sNames <- paste(myV[3:(a-1)], rep(key, times=nSets))
+  sNames <- myV[3:(a-1)]
   sSizes <- as.numeric(myV[a:b])
   sSizesNorm <- round(sSizes * 1000/n_hh)
   
@@ -283,13 +301,15 @@ for (key in names(df_list)) {
 }
 ```
 
+### Next Steps
+- Try using "library(flexdashboard)" to:
+    - Make plots flex to vertical alignment with narrower screens. (like normal html div columns)
+    - Include a limited gapminder clone via plotly with just Albania and Uganda.
+    - Add embedded scenes from Dollar Street: 25% median 75% quintile-income households side-by-side.
+- Add a table of statistics
+
 ```{r include=FALSE}
 # It was not long before the otherwise unremarkable Lazarat became a byword for quality in the coffee shops of Amsterdam. At peak production, the town was estimated to be turning out 900 tons of marijuana a year, with a street value of $6.1 billion. In 1999, Albania’s GDP was equivalent to just $3.4 billion.
 
-# NEXT STEPS
-# use splide to put in the charts
-# invert the svg's directly in the css https://stackoverflow.com/questions/39761120/invert-svg-image-using-css
-# include a limited gapminder clone via plotly with just Albania and Uganda
-# embedded scenes from Dollar Street: 25% median 75% quintile-income households side-by-side
 # https://www.kaggle.com/jhossain/explore-the-gapminder-dataset-with-plotly-express
 ```
