@@ -101,7 +101,7 @@ bhrdwj.net
 
 <!-- MAIN BODY -->
 ### Abstract
-The World Bank took very detailed surveys of representative samples of households in a bunch of countries. Uganda and Albania each had multiple years of data, so I downloaded those. I checked which families from the surveys had bicycles, motorbikes, or motor vehicles, and then made Venn Diagrams out of the results using nVennR.
+The World Bank took very detailed surveys of representative samples of households in a bunch of countries. Uganda and Albania each had multiple years of data, so I downloaded those. I checked which families from the surveys had bicycles, motorbikes, or motor vehicles, and then made Venn Diagrams out of the results using nVennR in Rstudio.
 
 <hr> ### Plots
 - Sample is normalized to 1000 households in each graph.
