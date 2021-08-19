@@ -301,6 +301,12 @@ for (key in names(df_list)) {
 }
 ```
 
+``` {r include=FALSE eval=FALSE}
+
+mean_nobs = mean(unlist(map(df_list, ~ length(.[[1]]))))
+
+```
+
 ### Next Steps
 - Try using "library(flexdashboard)" to:
     - Make plots flex to vertical alignment with narrower screens. (like normal html div columns)
