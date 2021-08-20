@@ -1,7 +1,7 @@
 # wbMicrodata
 ### World Bank Microdata
 - "Living Standards Measurement Study:" 
-  - URL: https://microdata.worldbank.org/index.php/catalog/lsms
+  - Source URL: https://microdata.worldbank.org/index.php/catalog/lsms
 
 ### Initial project: "vehicleVenn"
 - Link to "literate code" R Markdown page: [vehicleVenn](http://bhrdwj.net/r/vehicleVennNotebook.html)
